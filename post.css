@@ -1,6 +1,6 @@
 .main-layout {
     display: grid;
-    grid-template-rows: 100px; /* Set the height for the rows */
+    grid-template-rows: 400px; /* Set the height for the rows */
     grid-template-columns: 700px 200px; /* Set the width for the columns */
     gap: 60px;
     padding: 10px;
@@ -11,23 +11,60 @@
     justify-content: center; 
     align-items: center;
     text-align: center; /* Center the content vertically *//* Center the content horizontally */
+    color: #d7d8d7;
   }
   h2{
     justify-content: center; 
     align-items: center;
     text-align: center; /* Center the content vertically *//* Center the content horizontally */
+    color: #d7d8d7;
   }
 
 
   
   .main-layout > div {
-    background-color: rgb(125, 125, 138);
+    background-color: rgb(77, 77, 91);
     border: 1px solid white;
     text-align: flex;
     font-size: 12px;
     border-radius: 3px;
     justify-content: center; /* Center the content horizontally */
   }
+
+
+   
+  /*  Style of the top panel(input and  post button)*/
+ 
+  .chat-input {
+    width: 60%;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5b93eb;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .file-input {
+    display: none; /* Hide the file input element */
+  }
+  
+  .file-label {
+    padding: 10px;
+    background-color: #d7d8d7;
+    color: #141313;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
   
   @media screen and (max-width: 768px) {
     .main-layout {
