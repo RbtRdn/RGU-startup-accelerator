@@ -9,12 +9,13 @@ html, body {
   /* Header styles */
   header {
     background-color: rgb(77, 2, 65);
-    border-bottom: 15px solid rgb(85, 164, 188);
+    border-top: 15px solid rgb(85, 164, 188);
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
+   /* logo styles */
   .logo {
     margin: 5px;
     padding: 5px;
@@ -55,11 +56,15 @@ html, body {
     color:rgb(85, 164, 188);
   }
   
-  
+   /* Home section styles */
   #home {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  h3, h4, p{
+    color:white;
   }
   
   
