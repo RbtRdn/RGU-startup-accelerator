@@ -4,6 +4,7 @@
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="post.css">
+  <link rel="stylesheet" type="text/css" href="groups.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -53,6 +54,7 @@
               <div id="posts">
                 
                   <!-- Posts will be displayed here -->
+                  
               </div>
 
            
@@ -62,8 +64,19 @@
 
             <!-- Panel on the right for groups and more info(side footer?) -->     
             </div>
-            <div id="groups"> 
-              <h2>Groups</h2>
+            <div id="groups1">
+              <h2>GROUPS</h2>
+              <div class="display-groups" data-group-id="group1">Group 1</div>
+              <div class="display-groups" data-group-id="group2">Group 2</div>
+              <div class="display-groups" data-group-id="group3">Group 3</div>
+            </div>
+            <div id="group-info-section" style="display: none;">
+              <h2>Group Information</h2>
+              <div id="group-id"></div>
+              <div id="created-date"></div>
+              <div id="created-by"></div>
+              <div id="members"></div>
+              <div id="description"></div>
             </div>
                
            </div>
@@ -93,5 +106,7 @@
       
 
       <script src="main.js"></script>
+      <script src="groups.js"></script>
+
 </body>
 </html>

@@ -39,10 +39,15 @@ createPostButton.addEventListener('click', () => {
 
         post.innerHTML = `
         <h3>${username}</h3>
-        <p>${formattedDateTime}</p>
-        <h4>${description}</h4>
+       <p>${formattedDateTime}</p>
+       <h4>${description}</h4>
 
-        <img src="${imagePreview.src}" alt="Post Image" style="max-width: 100px;">
+
+        <img src="${imagePreview.src}" alt="Post Image" style="max-width: 500px;">
+
+        <button class="like-button"><i class="far fa-heart"></i> Like</button>
+       <button class="comment-button"><i class="far fa-comment"></i> Comment</button>
+       <div class="comments-container"></div>
     `;
 
         // Prepend the new post to the postsContainer to display the newest on top
@@ -57,4 +62,3 @@ createPostButton.addEventListener('click', () => {
         postForm.style.display = 'none';
     }
 });
-
